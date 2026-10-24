@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with TravelPlus and share your travel questions or ideas.">
+    <title>Contact Us | TravelPlus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="brand">
+                    <a href="index.html" id="logo">
+                        <img src="./img/logo-remv.png" alt="" class="logo">
+                        <span>TravelPlus</span>
+                    </a>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-page contact-page">
+        <section class="page-hero">
+            <p class="eyebrow">We’d love to hear from you</p>
+            <h1>Let’s talk travel.</h1>
+            <p>Have a question, suggestion, or destination you think we should feature? Send us a note.</p>
+        </section>
+
+        <section class="contact-layout" aria-label="Contact TravelPlus">
+            <div class="contact-copy">
+                <h2>Get in touch</h2>
+                <p>Use the form to share your thoughts or tell us what you’re planning. We’re always looking for ways to make TravelPlus more helpful for travelers.</p>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <label for="name">Your name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button class="button-link" type="submit">Send message</button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

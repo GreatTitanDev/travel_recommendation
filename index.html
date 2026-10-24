@@ -1,9 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body></body>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="brand">
+                    <a href="index.html" id="logo">
+                        <img src="./img/logo-remv.png" alt="TravelPlus" class="logo">
+                        <span>TravelPlus</span>
+                    </a>
+                </li>
+
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+
+                <li class="search-container">
+                    <form role="search">
+                        <input id="destination-search" name="destination-search" type="search"
+                            placeholder="Enter a destination">
+                        <button type="submit">🔍 Search</button>
+                        <button type="button">Clear</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <h1>Discover your next destination</h1>
+        <p>Explore beautiful places, discover hidden gems, find travel inspiration, and create unforgettable memories as you plan your next journey with TravelPlus.</p>
+
+        <section id="left-social-nav">
+            <ul>
+                <li><img src="./img/twitter.png" alt="X.com"></li>
+                <li><img src="./img/facebook.png" alt="fb.com"></li>
+                <li><img src="./img/instagram.png" alt="ig.com"></li>
+                <li><img src="./img/tiktok.png" alt="tiktok.com"></li>
+            </ul>
+        </section>
+
+        <section class="destinations" aria-label="Featured destinations">
+            <article class="destination-card">
+                <img src="./img/sydney.jpg" alt="Sydney Opera House in Sydney">
+                <div class="card-content">
+                    <h2>Sydney, Australia</h2>
+                    <p>Enjoy iconic landmarks, charming cafés, and beautiful city streets.</p>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <img src="./img/tokyo.jpg" alt="Tokyo skyline at night">
+                <div class="card-content">
+                    <h2>Tokyo, Japan</h2>
+                    <p>Relax on tropical beaches and explore lush landscapes and temples.</p>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <img src="./img/rio.jpg" alt="Christ the Redeemer statue in Rio de Janeiro">
+                <div class="card-content">
+                    <h2>Rio de Janeiro, Brazil</h2>
+                    <p>Discover peaceful gardens, historic temples, and traditional culture.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
 </html>
